@@ -33,6 +33,8 @@ nav {
 
 .navbar-items {
   position: absolute;
+  display: flex;
+  flex-direction: row;
   right: 0;
   height: 80px;
   line-height: 80px;
@@ -130,9 +132,13 @@ nav {
   color: #298fef;
 }
 
+.services-container .justify-space {
+  height: 10px;
+}
+
 .services-container h3 {
   margin-bottom: 25px;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .services-container p {
@@ -208,6 +214,10 @@ nav {
   cursor: pointer;
 }
 
+.plan .justify-space {
+  height: 10px;
+}
+
 .plan .recommended {
   border: 10px double #daa520;
 }
@@ -277,11 +287,11 @@ nav {
 
 .contact-container p {
   font-size: 20px;
-  margin-bottom: 40px;
+  margin: 20px 0 40px 0;
 }
 .contact-container input,
 .contact-container textarea {
-  width: 200px;
+  width: 221px;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: px;
@@ -315,4 +325,273 @@ footer {
 
 footer p {
   color: #efefef;
+}
+
+/*Responsividade da página */
+
+@media (max-width: 1060px) {
+  .plan li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .plan .plan-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .main-banner p {
+    padding: 1rem;
+  }
+
+  .services-container ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-container h3 {
+    font-size: 20px;
+  }
+
+  .services-container p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .plan .plan-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 950px) {
+  .plan li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .plan .plan-name {
+    font-size: 14px;
+  }
+
+  .searchdomain-container h2 {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .plan li {
+    font-size: 10px;
+  }
+
+  .plan .plan-btn {
+    font-size: 20px;
+  }
+
+  .plan .recommended-bottomtag {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 810px) {
+  .plan .plan-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container h3 {
+    font-size: 18px;
+  }
+
+  .services-container p {
+    font-size: 12px;
+  }
+  .plan .price {
+    font-size: 14px;
+    line-height: 100px;
+  }
+
+  .plan .plan-name {
+    font-size: 12px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .plan li {
+    height: 50px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+
+  .plan .plan-btn {
+    font-size: 16px;
+    line-height: 10px;
+    height: 40px;
+  }
+
+  .plan .recommended-bottomtag {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 690px) {
+  .plans-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .plan ul {
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .plan .recommended {
+    margin-top: 10px;
+  }
+
+  .plan .justify-space {
+    height: 0;
+  }
+
+  .searchdomain-container h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .plan .price {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar-items {
+    justify-content: flex-end;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+  .services-container ul {
+    flex-direction: column;
+  }
+
+  .services-container h3 {
+    font-size: 20px;
+  }
+
+  .services-container p {
+    font-size: 14px;
+  }
+  .plan {
+    margin-bottom: 50px;
+  }
+
+  .plan ul {
+    width: 250px;
+  }
+
+  .plan li {
+    padding-top: 0px;
+  }
+
+  .plan .plan-name {
+    padding-top: 70px;
+  }
+
+  .plan .plan-btn {
+    padding: 35px;
+  }
+
+  .searchdomain-container {
+    padding: 5rem 2rem;
+  }
+
+  .searchdomain-container input[type="text"] {
+    width: 90%;
+  }
+
+  .contact-container {
+    padding: 5rem 1rem 2rem 1rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 300px;
+  }
+
+  .searchdomain-container input[type="submit"] {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .navbar-items {
+    justify-content: flex-end;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    right: -100;
+  }
+
+  .default-btn {
+    padding: 5px 10px;
+  }
+
+  .navbar-items .default-btn:hover {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo {
+    width: 30px;
+    margin-top: 20px;
+  }
+  .navbar-items {
+    justify-content: flex-end;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    right: -100;
+  }
+
+  .default-btn {
+    padding: 5px 10px;
+  }
+
+  .navbar-items .default-btn:hover {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-items {
+    justify-content: flex-end;
+  }
+
+  .navbar li {
+    margin-left: 15px;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    right: -100;
+  }
+
+  .default-btn {
+    padding: 5px 10px;
+  }
+
+  .navbar-items .default-btn:hover {
+    padding: 5px 10px;
+  }
 }
